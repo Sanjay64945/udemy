@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Gabarito", sans-serif;}
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 10px;
+    align-items: center;
+
+}
+.navbar-section__1__title{
+    color: purple;
+}
+.navbar-section__2{
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    
+}
+.navbar-section__2 input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    
+
+}
+.navbar-section__2 input:focus{
+    outline: none;
+}
+.navbar-section__3{
+    display: flex;
+    gap: 10px;
+    
+    
+}
+.catagories{
+    display: flex;
+    justify-content: space-between;
+    border: solid black 1px;
+    padding: 10px;
+    
+    
+}
+.catagories P{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.sale-image img{
+    width: 100%;
+}
+.sale-image{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.recommended{
+    padding: 10px;
+}
+.course-card{
+    width: 300px ;
+    margin: 20px;
+    
+}
+.recommended_container{
+    display: flex;
+   
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+}
+.course-card img{
+    width: 100%;
+    height: 150px;
+
+}
+.topics{
+    padding: 10px;
+}
+.topics_container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+   
+}
+.topics_container p{
+    border: solid black 1px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+  
+
+}
+.footer_one{
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    color: white;
+    gap: 20px;
+    
+    
+}
+.footer_one__s1 p{
+    margin: 20px;
+}
+
+.footer_one__s2 p{
+    margin: 20px;
+}
+footer{
+    color: white;
+    background-color: black;
+}
+.footer_one__s3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
