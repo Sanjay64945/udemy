@@ -39,10 +39,10 @@ body{
     
 }
 .mylearning_popup{
-    background-color: black;
+    background-color: goldenrod;
     height: fit-content;
     border: solid black 1px;
-    color: white;
+    color: black;
     padding: 20px;
     position: absolute;
     width: 200px;
@@ -79,6 +79,9 @@ body{
     
     
 }
+.navbar-section__4{
+    display: none;
+}
 .catagories{
     display: flex;
     justify-content: space-between;
@@ -87,13 +90,20 @@ body{
     
     
 }
-.catagories P{
+.catagories p{
     color: white;
     background-color: blueviolet;
     padding: 10px;
     border-radius: 10px;
+    border: solid black 1px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+}
+.catagories p:hover{
+    color: blueviolet;
+    border: solid black 1px;
+    background-color: transparent;
+    
 }
 .sale-image img{
     width: 100%;
@@ -107,17 +117,41 @@ position: relative;}
     background-color: aqua;
     top: 40%;
     left: 20%;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
+    animation-name: identifier;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+   
+
 
 
 }
+@keyframes identifier {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        text-replace: scale(1);
+
+    }
+
+    
+}
+
+    
+
 .recommended{
     padding: 10px;
 }
 .course-card{
-    width: 300px ;
-    margin: 20px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
     
 }
 .recommended_container{
@@ -175,5 +209,34 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (max-width:600px)  {
+    body{
+        font-size: 10px;
+    }
+    .course-card{
+        flex-basis: 40%;
+        
+    }
+    .course-card img{
+        height: 60%;
+    }
+    .catagories{
+        display: none;
+    }
+    .navbar-section__2,.navbar-section__3{
+        display: none;
+    }
+    .navbar-section__4{
+        display: block;
+        margin: 5px;
+    }
+    .sale-image__1{
+        width: fit-content;
+        padding: 10px;
+        left: 5%;
+        top: 30%;
+    }
+}
+
 
 
